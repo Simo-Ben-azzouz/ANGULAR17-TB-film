@@ -8,17 +8,20 @@ export class LoginService {
   constructor() { }
 
   login(email: string, password: string) {
-    // In a real-world scenario, you would make an API call to authenticate the user
-    // and get a secure token from the server.
-    // For demonstration purposes, a random token is generated and stored in local storage.
-    localStorage.setItem("token", Math.random() + "");
+    // Check if localStorage is defined before using it
+    if (typeof localStorage !== 'undefined') {
+      // Store the token in localStorage
+      localStorage.setItem("token", Math.random() + "");
+    } else {
+      console.error('localStorage is not available.');
+    }
   }
 
   get isLoggedIn() {
-    // Check if a token exists in the local storage.
-    if (localStorage.getItem('token')) {
-      return true;  // User is considered logged in.
+    // Check if localStorage is defined before using it
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('token')) {
+      return true;
     }
-    return false;  // No token found, user is not logged in.
+    return false;
   }
 }
