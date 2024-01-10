@@ -1,2 +1,2 @@
 export const LOGO_URL = "https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png";
-export const BG_IMG_URL = "https://assets.nflxext.com/ffe/siteui/vlv3/c38a2d52-138e-48a3-ab68-36787ece46b3/c70e5de4-655c-4798-bf8f-8de90159d989/MA-fr-20240101-popsignuptwoweeks-perspective_alpha_website_small.jpg";
+export const BG_IMG_URL = "https://hcdevilsadvocate.com/wp-content/uploads/2019/01/netflix-background-9-900x506.jpg";
