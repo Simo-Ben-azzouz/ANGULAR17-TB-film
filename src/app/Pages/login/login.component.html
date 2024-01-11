@@ -1,8 +1,10 @@
-<div class="h-screen" [ngStyle]="{'background-image': 'url(' + bgUrl + ')'}">
-    <div class="header">
-        <img src="../../../assets/images/TB-filmLogo.png" alt="logo" class="w-20">
-    </div>
-
+<div class="h-screen" [ngStyle]="{'background-image': 'url(' + bgUrl + ')'}"
+style=" background-size: cover;
+"
+>
+<!-- headercomponent -->
+    <app-header></app-header>
+<!-- fin -->
     <!-- Login card -->
     <div class="login-container">
         <div class="login-card">

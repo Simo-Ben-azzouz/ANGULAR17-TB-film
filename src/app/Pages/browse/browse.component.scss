@@ -1,0 +1,38 @@
+// .banner
+// {
+//       /* The image used */
+//   background: url("https://legrandpop.fr/wp-content/uploads/2022/12/top-cine-2022-top-gun-maverick-1024x576.jpg");
+
+//   /* Full height */
+//   height: calc(100vh - 70px);
+//   width: 100vw;
+
+//   /* Center and scale the image nicely */
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover !important;
+//   object-fit: cover;
+// }
+.browse-page 
+{
+    background-color: black;
+     .banner {
+        height: 100vh;
+        width: 100wv;
+         .banner-img{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+         }
+          .banner-movie-info{
+            color: white;
+            position: relative;
+            display: flex;
+            z-index: 9999;
+            flex-direction: column;
+            top: 40%;
+            padding-left: 2rem;
+          }
+     }
+}

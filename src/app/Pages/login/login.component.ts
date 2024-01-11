@@ -5,19 +5,21 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';  // Import Router from '@angular/router'
 import { ToastrService } from 'ngx-toastr';
+import { HeaderComponent } from '../../components/header/header.component';
 
 @Component({
   selector: 'app-login',
   standalone: true,
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    HeaderComponent
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss',
 })
 export class LoginComponent {
-  logoUrl = LOGO_URL;
+  
   bgUrl = BG_IMG_URL;
 
   email!:string;
