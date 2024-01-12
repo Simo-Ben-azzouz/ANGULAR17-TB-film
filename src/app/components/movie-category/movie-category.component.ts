@@ -13,5 +13,6 @@ import { MovieCardComponent } from '../movie-card/movie-card.component';
   styleUrl: './movie-category.component.scss'
 })
 export class MovieCategoryComponent {
-  @Input() title = ""
+  @Input() title = "";
+  @Input() movieList :any[] =[];
 }

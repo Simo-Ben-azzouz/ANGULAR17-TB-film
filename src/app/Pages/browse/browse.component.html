@@ -18,8 +18,10 @@
 
     <div class="movie-categories">
         <!-- movies component-->
-    <app-movie-category [title]="'Trending'"></app-movie-category>
-    <app-movie-category [title]="'New relese'"></app-movie-category>
+    <app-movie-category [title]="'Popular'" [movieList]="popularMovie"></app-movie-category>
+    <app-movie-category [title]="'Top Rated'" [movieList]="topRatedMovie"></app-movie-category>
+    <app-movie-category [title]="'Upcomming'" [movieList]="upcommingMovie"></app-movie-category>
+    <app-movie-category [title]="'Now Player'" [movieList]="nowPlayingMovie"></app-movie-category>
                <!-- fin -->
 
     </div>

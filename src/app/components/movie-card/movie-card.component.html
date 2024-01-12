@@ -1,5 +1,6 @@
 <div class="movies-card">
-    <img src="https://www.indiewire.com/wp-content/uploads/2017/09/imperial-dreams-2014.jpg?w=426" alt="movie image" />
-    <h4>title</h4>
-    <p>movie description</p>
+    <img [src]="'https://image.tmdb.org/t/p/w500/'+movie.poster_path" 
+          alt="movie image" 
+          />
+    <h4>{{movie.original_name}}</h4>
 </div>
