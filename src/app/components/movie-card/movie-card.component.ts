@@ -1,4 +1,6 @@
+import { tmdbConfig } from './../../constant/config';
 import { Component, Input } from '@angular/core';
+import { Movie } from '../../types/movies';
 
 @Component({
   selector: 'app-movie-card',
@@ -8,5 +10,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './movie-card.component.scss'
 })
 export class MovieCardComponent {
-@Input() movie :any = {};
+@Input() movie! :Movie;
+tmdbConfig = tmdbConfig;
 }

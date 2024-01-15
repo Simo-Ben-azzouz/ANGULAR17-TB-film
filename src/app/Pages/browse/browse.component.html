@@ -5,13 +5,17 @@
           <!-- fin -->
 
     <div class="banner">
-        <img class="banner-img" src="https://legrandpop.fr/wp-content/uploads/2022/12/top-cine-2022-top-gun-maverick-1024x576.jpg" alt="" />
+        <img 
+        class="banner-img" 
+        [src]="tmdbConfig.imagePath + bannerMovie.poster_path" 
+        alt="banner image" 
+        />
         <div class="banner-movie-info">
-            <h4>Movie title</h4>
-            <p>movie description</p>
-            <div>
-                <button>Play</button>
-                <button>More Info</button>
+            <h4 class="banner-heading">{{bannerMovie.original_name}}</h4>
+            <p class="banner-description">{{bannerMovie.overview}}</p>
+            <div class="banner-action">
+                <button class="play-btn">Play</button>
+                <button class="info-btn">More Info</button>
             </div>
         </div>
     </div>
