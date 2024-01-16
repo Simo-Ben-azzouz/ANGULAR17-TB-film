@@ -31,21 +31,20 @@ export class BrowseComponent {
       this.bannerMovie = this.popularMovie[0];
     });
 
-    this.MovieService.getNowPlayingMovies().subscribe((result :any) =>{
-      console.log(result);
-      this.nowPlayingMovie =result.results;
-      // this.bannerMovie = this.nowPlayingMovie[17];
-    });
-
     this.MovieService.getTopRatedMovies().subscribe((result :any) =>{
       console.log(result);
       this.topRatedMovie =result.results;
-
     });
 
     this.MovieService.getUpcomingMovies().subscribe((result :any) =>{
       console.log(result);
       this.upcommingMovie =result.results;
+    });
+
+    this.MovieService.getNowPlayingMovies().subscribe((result :any) =>{
+      console.log(result);
+      this.nowPlayingMovie =result.results;
+      // this.bannerMovie = this.popularMovie[8];
     });
   }
 }

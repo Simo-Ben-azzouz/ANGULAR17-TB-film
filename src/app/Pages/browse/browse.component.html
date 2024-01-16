@@ -11,16 +11,16 @@
         alt="banner image" 
         />
         <div class="banner-movie-info">
-            <h4 class="banner-heading">{{bannerMovie.original_name}}</h4>
+            <h4 class="banner-heading">{{bannerMovie.original_title}}</h4>
             <p class="banner-description">{{bannerMovie.overview}}</p>
             <div class="banner-action">
-                <button class="play-btn">Play</button>
-                <button class="info-btn">More Info</button>
+                <button type="button" class="play-btn">Play</button>
+                <button type="button" class="info-btn">More Info</button>
             </div>
         </div>
     </div>
 
-    <div class="movie-categories">
+    <div class="movie-categories px-16 relative z-50 -mt-40">
         <!-- movies component-->
     <app-movie-category [title]="'Popular'" [movieList]="popularMovie"></app-movie-category>
     <app-movie-category [title]="'Top Rated'" [movieList]="topRatedMovie"></app-movie-category>

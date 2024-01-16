@@ -13,7 +13,7 @@ export class MovieService {
   getPopularMovies()
   {
     const headers =this.getHeaders(); 
-    return this.httpService.get("https://api.themoviedb.org/3/tv/popular",{
+    return this.httpService.get("https://api.themoviedb.org/3/movie/popular",{
       headers:headers
     });
 
@@ -22,7 +22,7 @@ export class MovieService {
   getTopRatedMovies()
   {
     const headers =this.getHeaders(); 
-    return this.httpService.get("https://api.themoviedb.org/3/tv/top_rated",{
+    return this.httpService.get("https://api.themoviedb.org/3/movie/top_rated",{
       headers:headers
     });
 
