@@ -56,4 +56,12 @@ export class MovieService {
     headers = headers.append("Authorization","Bearer " + tmdbConfig.accessToken)
     return headers;
   }
+
+  getMoviesVideos(id : number)
+  {
+    const headers =this.getHeaders(); 
+    return this.httpService.get(`https://api.themoviedb.org/3/movie/${id}/videos`,{
+      headers:headers
+    });
+  }
 }
