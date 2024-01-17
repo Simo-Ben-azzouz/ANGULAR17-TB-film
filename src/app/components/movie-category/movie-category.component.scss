@@ -1,0 +1,10 @@
+.mb-12
+{
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;   
+}
+.mb-12::-webkit-scrollbar {
+    display: none;
+  }
+  
