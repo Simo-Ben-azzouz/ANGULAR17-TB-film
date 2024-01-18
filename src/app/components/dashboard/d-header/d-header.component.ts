@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './d-header.component.html',
-  styleUrl: './d-header.component.css'
+  styleUrl: './d-header.component.scss'
 })
 export class DHeaderComponent {
 
