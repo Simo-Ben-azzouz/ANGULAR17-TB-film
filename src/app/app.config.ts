@@ -6,6 +6,9 @@ import { provideClientHydration } from '@angular/platform-browser';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideToastr } from 'ngx-toastr';
 import { provideHttpClient } from '@angular/common/http';
+import { HIGHCHARTS_MODULES } from 'angular-highcharts';
+import * as more from 'highcharts/highcharts-more.src';
+import * as exporting from 'highcharts/modules/exporting.src';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -14,5 +17,6 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(),
     provideAnimations(),
     provideToastr(), // Toastr providers
+    { provide: HIGHCHARTS_MODULES, useFactory: () => [ more, exporting ] } 
     ]
 };
