@@ -10,6 +10,11 @@ import { HIGHCHARTS_MODULES } from 'angular-highcharts';
 import * as more from 'highcharts/highcharts-more.src';
 import * as exporting from 'highcharts/modules/exporting.src';
 
+// Factory function to provide Highcharts modules
+export function highchartsModules() {
+  // Return an array of the Highcharts modules
+  return [more, exporting];
+}
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes), 
@@ -17,6 +22,7 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(),
     provideAnimations(),
     provideToastr(), // Toastr providers
-    { provide: HIGHCHARTS_MODULES, useFactory: () => [ more, exporting ] } 
+    { provide: HIGHCHARTS_MODULES, 
+      useFactory: highchartsModules } 
     ]
 };

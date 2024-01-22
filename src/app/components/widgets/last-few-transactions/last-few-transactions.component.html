@@ -1,1 +1,23 @@
-<p>last-few-transactions works!</p>
+<div class="transactions">
+    <div class="title">MOST POPULAR MOVIES RIGHT NOW</div>
+    <div class="transaction-wrapper">
+      <div class="transaction" *ngFor="let transaction of film">
+        <div class="image">
+          <img [src]="transaction.imgSrc" alt="" />
+        </div>
+        <div class="title">{{ transaction.title }}</div>
+        <div class="price">{{ transaction.rate }}</div>
+        <div class="shop-location">
+          <div class="shop">{{ transaction.top }}</div>
+          <div class="location">{{ transaction.actors }}</div>
+        </div>
+        <div
+          class="status"
+          [ngClass]="{
+            edit: transaction.status === 'edit'}"
+        >
+          {{ transaction.status }}
+        </div>
+      </div>
+    </div>
+  </div>

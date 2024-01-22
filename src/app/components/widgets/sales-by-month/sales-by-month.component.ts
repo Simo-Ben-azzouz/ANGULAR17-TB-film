@@ -16,7 +16,7 @@ export class SalesByMonthComponent {
       height: 325
     },
     title: {
-      text: 'Month wise watch'
+      text: 'MOST MONTH WATCHED'
     },
     xAxis: {
       categories: [

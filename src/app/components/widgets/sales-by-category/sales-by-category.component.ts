@@ -15,7 +15,7 @@ export class SalesByCategoryComponent {
       height: 325
     },
     title: {
-      text: 'Genre'
+      text: 'GENRE'
     },
     xAxis: {
       categories: [
@@ -28,7 +28,7 @@ export class SalesByCategoryComponent {
     },
     yAxis: {
       title: {
-        text: 'Revenue in %'
+        text: 'Revenkue in %'
       }
     },
     series: [
