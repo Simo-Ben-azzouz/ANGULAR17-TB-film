@@ -17,6 +17,7 @@ export function highchartsModules() {
 }
 export const appConfig: ApplicationConfig = {
   providers: [
+    // importProvidersFrom(HttpClientModule),
     provideRouter(routes), 
     provideHttpClient(), // movie.service
     provideClientHydration(),
